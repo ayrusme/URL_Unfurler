@@ -1,6 +1,6 @@
-# JetPat Interview
+# URL Unfurler
 
-This repository contains the specifics asked in the document emailed to me 
+This repository contains the specifics to render a preview of an article published in Medium.com, YourStory.com or inc42.com
 
 # How to get started
 
