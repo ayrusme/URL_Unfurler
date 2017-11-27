@@ -13,7 +13,7 @@ CORS(APP)
 @APP.route("/get-thumbnail", methods=["POST"])
 def thumbnail_generator():
     """Route Function to handle the thumbnail request from the frontend"""
-    website_url = json.loads(request.data)['url']
+    website_url = json.loads(request.data.decode())['url']
     try:
         webpage, message = url_preview.send_request(website_url)
         if webpage is not None:

@@ -10,6 +10,10 @@ run the following command from the Backend folder
 
 `pip install -r requirements.txt`
 
+If you have problems installing the newspaper library, please run the following command
+
+`pip3 install newspaper`
+
 Further, run the command from the Backend folder
 
 `python app.py`
