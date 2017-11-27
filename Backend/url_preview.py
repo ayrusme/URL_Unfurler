@@ -1,5 +1,8 @@
 """Python Script to generate a thumbnail of a webpage"""
 
+__author__ = "Surya Raman"
+__license__ = "MIT"
+
 import sys
 
 import requests as rq
@@ -41,9 +44,15 @@ def get_date_time(webpage_url):
     article = Article(webpage_url)
     article.download()
     article.parse()
-    return article.publish_date.strftime('%d/%m/%Y')
+    return article.publish_date.strftime('%d %B %Y')
 
 def get_preview_image(soup):
     """Function to get the description from the soup object"""
     return soup.find('meta', property='og:image')
 
+def get_favicon(soup):
+    """Function to get the favicon from the soup object"""
+    if soup.find('link', rel='shortcut icon'):
+        return soup.find('link', rel='shortcut icon')['href']
+    elif soup.find('link', rel='icon'):
+        return soup.find('link', rel='icon')['href']

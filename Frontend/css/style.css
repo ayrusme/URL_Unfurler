@@ -1,4 +1,21 @@
 .render-area{
   margin-top: 20px;
-  padding-left: 5%;
+  padding: 20px;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  width: 750px;
+}
+
+.mui-form--inline{
+  padding-left: 15%;
+  padding-top: 20px;
+  
+}
+
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.padded{
+  text-align: center;
 }

@@ -7,21 +7,22 @@
     <title>URL Unfurler</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="css/mui.min.css" rel="stylesheet" type="text/css" />
-    <script src="js/mui.min.js"></script>
-
   </head>
 
   <body>
 
-    <form action="routehere" class="mui-form--inline" style="padding-left:5%">
+    <form id="url-form" class="mui-form--inline">
       <div class="mui-textfield mui-textfield--float-label" style="width:70%">
-        <input type="url" required>
+        <input id="url-box" type="url" required>
         <label>URL</label>
       </div>
       <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
     </form>
-    <div class="render-area"> Render Area </div>
+    <div class="render-area shadow mui-container" id="render-area"></div>
 
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/request.js"></script>
+    <script src="js/mui.min.js"></script>
   </body>
 
 </html>
